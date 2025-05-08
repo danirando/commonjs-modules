@@ -1,9 +1,8 @@
-const hobbies = (hobbyOne, hobbyTwo, hobbyThree) => [
-  hobbyOne,
-  hobbyTwo,
-  hobbyThree,
-];
+const hobbiesFunction = (hobbyOne, hobbyTwo, hobbyThree) => {
+  let hobbies = [hobbyOne, hobbyTwo, hobbyThree];
+  return hobbies;
+};
 
-hobbies();
+const hobbies = hobbiesFunction("calcio", "tennis", "golf");
 
-module.exports = hobbies();
+module.exports = { hobbies };

@@ -1,7 +1,8 @@
-const name = (firstName, lastName) => {
-  firstName, lastName;
+const nameFunction = (firstName, lastName) => {
+  let fullName = { firstName, lastName };
+  return fullName;
 };
 
-name();
+const fullName = nameFunction("Mario", "Rossi");
 
-module.exports = name();
+module.exports = { fullName };
