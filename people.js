@@ -1,14 +1,11 @@
-const { fullName } = require("./names");
-const { hobbies } = require("./hobbies");
+const { nameFunction } = require("./names");
+const { hobbiesFunction } = require("./hobbies");
 
 const init = () => {
-  const person = {
-    fullName,
-    hobbies,
+  return {
+    fullName: nameFunction("mario", "rossi"),
+    hobbies: hobbiesFunction("calcio", "tennis", "golf"),
   };
-  return person;
 };
 
-let person = init();
-
-console.log(person);
+console.log(init());
